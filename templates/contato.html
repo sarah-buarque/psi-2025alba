@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contato</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
+
+    <img src="{{url_for('static', filename='images/comunicacao.png')}}" onclick="exibirAlerta()"> 
+    <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
+
      <p>
       E-mail: {{email}}
       Telefone: {{tel}}
